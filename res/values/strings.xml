@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">Backup Manager</string>
+    
+    <string name="menu_settings">Backup Manager</string>
+    <string name="title_activity_main">Backup Manager</string>
+        <!-- CPU Settings strings -->
+    <string name="nandroid_title">Backup/Restore Nandroid Backup</string>
+        <string name="nandroidrestore_str">Restore Nandroid Backup</string>
+        <string name="nandroidbackup_str">Make Nandroid Backup</string>
+        <string name="odin_title">Backup to Odin ROM</string>
+        <string name="makeodin_str">Make Odin ROM</string>
+        <string name="custodin_str">Customize Odin ROM contents</string>
+        
+
+</resources>
