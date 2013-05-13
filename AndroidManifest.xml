@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.broodplank.nandroidodin"
+    package="com.broodplank.backupman"
     android:versionCode="1"
     android:versionName="1.0" android:installLocation="internalOnly" >
 
@@ -14,7 +14,7 @@
         android:theme="@style/AppTheme" android:allowBackup="true">
         
         <activity
-            android:name="com.broodplank.nandroidodin.mainActivity"
+            android:name="com.broodplank.backupman.mainActivity"
             android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +23,7 @@
         </activity>
      
         <activity android:name="NANDROIDBACKUP" android:label="@string/nandroid_title"
-                  android:parentActivityName="com.broodplank.nandroidodin">
+                  android:parentActivityName="com.broodplank.backupman">
             <intent-filter>
                  <action android:name="android.intent.action.MAIN" />
                  <category android:name="android.intent.category.DEVELOPMENT_PREFERENCE" />
@@ -31,7 +31,7 @@
         </activity>
         
              <activity android:name="NANDROIDRESTORE" android:label="@string/nandroid_title"
-                  android:parentActivityName="com.broodplank.nandroidodin">
+                  android:parentActivityName="com.broodplank.backupman">
             <intent-filter>
                  <action android:name="android.intent.action.MAIN" />
                  <category android:name="android.intent.category.DEVELOPMENT_PREFERENCE" />
@@ -39,7 +39,7 @@
         </activity>
         
                   <activity android:name="MAKEODIN" android:label="@string/odin_title"
-                  android:parentActivityName="com.broodplank.nandroidodin">
+                  android:parentActivityName="com.broodplank.backupman">
             <intent-filter>
                  <action android:name="android.intent.action.MAIN" />
                  <category android:name="android.intent.category.DEVELOPMENT_PREFERENCE" />
@@ -47,7 +47,7 @@
         </activity>
         
                        <activity android:name="CUSTODIN" android:label="@string/custodin_str"
-                  android:parentActivityName="com.broodplank.nandroidodin">
+                  android:parentActivityName="com.broodplank.backupman">
             <intent-filter>
                  <action android:name="android.intent.action.MAIN" />
                  <category android:name="android.intent.category.DEVELOPMENT_PREFERENCE" />
