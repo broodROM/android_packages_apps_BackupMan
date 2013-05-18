@@ -6,6 +6,7 @@ import java.util.concurrent.TimeoutException;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.DialogInterface.OnClickListener;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -71,8 +72,7 @@ public void MAKEODINNOW() {
   		 Toast.makeText(getApplicationContext(), 
   			     "Finished building Odin ROM!", Toast.LENGTH_LONG).show();  
   		   
-
-		 	    	
+ 	    	
   		
   		    };
   			    	 
@@ -86,13 +86,15 @@ public void MAKEODINNOW() {
   	   @Override
   	   public void onClick(DialogInterface dialog, int which) {
   		   
-  		 
+
   	    // TODO Auto-generated method stub
 
   	   }
   	  });
 
   builder.show();
+  
+
 
 	
 }

@@ -18,11 +18,12 @@
             android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
                 <category android:name="android.intent.category.DEVELOPMENT_PREFERENCE" />
             </intent-filter>
         </activity>
      
-        <activity android:name="NANDROIDBACKUP" android:label="@string/nandroid_title"
+        <activity android:name="com.broodplank.backupman.NANDROIDBACKUP" android:label="@string/nandroid_title"
                   android:parentActivityName="com.broodplank.backupman">
             <intent-filter>
                  <action android:name="android.intent.action.MAIN" />
@@ -30,7 +31,7 @@
             </intent-filter>
         </activity>
         
-             <activity android:name="NANDROIDRESTORE" android:label="@string/nandroid_title"
+             <activity android:name="com.broodplank.backupman.NANDROIDRESTORE" android:label="@string/nandroid_title"
                   android:parentActivityName="com.broodplank.backupman">
             <intent-filter>
                  <action android:name="android.intent.action.MAIN" />
@@ -38,7 +39,7 @@
             </intent-filter>
         </activity>
         
-                  <activity android:name="MAKEODIN" android:label="@string/odin_title"
+                  <activity android:name="com.broodplank.backupman.MAKEODIN" android:label="@string/odin_title"
                   android:parentActivityName="com.broodplank.backupman">
             <intent-filter>
                  <action android:name="android.intent.action.MAIN" />
@@ -46,7 +47,7 @@
             </intent-filter>
         </activity>
         
-                       <activity android:name="CUSTODIN" android:label="@string/custodin_str"
+                       <activity android:name="com.broodplank.backupman.CUSTODIN" android:label="@string/custodin_str"
                   android:parentActivityName="com.broodplank.backupman">
             <intent-filter>
                  <action android:name="android.intent.action.MAIN" />

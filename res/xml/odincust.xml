@@ -1,21 +1,11 @@
  <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-      <PreferenceCategory android:title="@string/nandroid_title">
-  <PreferenceScreen android:key="makenandroid" android:summary="Make an (online) nandroid backup right now without rebooting in CWM" android:title="@string/nandroidbackup_str">
-                                     <intent android:targetPackage="com.broodplank.nandroidodin" android:action="android.intent.action.MAIN" android:targetClass="com.broodplank.nandroidodin.NANDROIDBACKUP" /> 
-                               </PreferenceScreen>      
-                        <PreferenceScreen android:key="restorenandroid" android:summary="Restore an earlier nandroid backup by rebooting in CWM" android:title="@string/nandroidrestore_str">
-                                     <intent android:targetPackage="com.broodplank.nandroidodin" android:action="android.intent.action.MAIN" android:targetClass="com.broodplank.nandroidodin.NANDROIDRESTORE" /> 
-                               </PreferenceScreen>    
+      <PreferenceCategory android:title="@string/custodin_str">
+          <CheckBoxPreference android:title="Backup boot.img" android:summary="Backup the kernel your currently running" android:key="back_boot" android:defaultValue="true"/>    
+          <CheckBoxPreference android:title="Backup recovery.img" android:summary="Backup the recovery your currently have installed" android:key="back_recovery" android:defaultValue="true"/> 
+          <CheckBoxPreference android:title="Backup /system" android:summary="Backup broodROM JB's data" android:key="back_system" android:defaultValue="true"/> 
+          <CheckBoxPreference android:title="Backup /data" android:summary="Backup user data" android:key="back_data" android:defaultValue="true"/> 
+          <CheckBoxPreference android:title="Make empty /cache" android:summary="Make empty cache partition to prevent error in recovery on first boot." android:key="back_cache" android:defaultValue="true"/> 
   </PreferenceCategory>
-  <PreferenceCategory android:title="@string/odin_title">
-                            <PreferenceScreen android:key="makeodin" android:summary="Make a ready to flash Odin ROM of your current ROM installation, please note that the Odin ROM is only flashable in Windows" android:title="@string/makeodin_str">
-                                     <intent android:targetPackage="com.broodplank.nandroidodin" android:action="android.intent.action.MAIN" android:targetClass="com.broodplank.nandroidodin.MAKEODIN" /> 
-                               </PreferenceScreen>    
-                               <PreferenceScreen android:key="custodin" android:summary="Select the partitions you want to include in the Odin Image" android:title="@string/custodin_str">
-                                     <intent android:targetPackage="com.broodplank.nandroidodin" android:action="android.intent.action.MAIN" android:targetClass="com.broodplank.nandroidodin.CUSTODIN" /> 
-                               </PreferenceScreen>    
-                                     
-              </PreferenceCategory>
                
 </PreferenceScreen>
